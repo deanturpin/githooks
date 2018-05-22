@@ -1,4 +1,4 @@
-Clone and then add to your global git config.
+Clone this repo and then add hook path to your global git config.
 
 ```bash
 cd githooks
