@@ -5,5 +5,4 @@ cd githooks
 git config --global core.hooksPath $PWD
 ```
 
-# References
-https://github.com/andrewseidl/githook-clang-format
+Inspired by [githook-clang-format](https://github.com/andrewseidl/githook-clang-format).
