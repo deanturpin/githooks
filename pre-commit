@@ -1,0 +1,14 @@
+#!/bin/bash
+
+log=$(mktemp)
+date > $log
+
+for file in $(git diff-index --cached --name-only HEAD); do
+  if [[ $file == *.cpp || $file == *.h ]]; then
+    echo formatting "$file" >> $log
+    clang-format -i "$file"
+    git add "$file"
+  else
+    echo ignoring "$file" >> $log
+  fi
+done
