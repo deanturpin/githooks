@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# Check clang format is installed
-if [[ $(which clang-format) ]]; then
-
-  # Format all C++ files
-  for file in $(git diff-index --cached --name-only HEAD); do
-    if [[ $file == *.cpp || $file == *.h ]]; then
-      clang-format -i "$file"
-      git add "$file"
-    fi
-  done
-fi
+for file in $(git diff-index --cached --name-only HEAD); do
+  if [[ $file == *.cpp || $file == *.h ]]; then
+    clang-format -i "$file"
+    git add "$file"
+  fi
+done
