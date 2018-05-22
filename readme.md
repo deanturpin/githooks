@@ -6,4 +6,3 @@ git config --global core.hooksPath $PWD
 ```
 
 Edit ```~/.gitconfig``` to remove it. Inspired by [githook-clang-format](https://github.com/andrewseidl/githook-clang-format).
-r
