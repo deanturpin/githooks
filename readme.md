@@ -1,8 +1,8 @@
-Clone and then add to your global git config.
+Clone this repo and then add hook path to your global git config.
 
 ```bash
-git config --global core.hooksPath path/to/githooks
+cd githooks
+git config --global core.hooksPath $PWD
 ```
 
-# References
-https://github.com/andrewseidl/githook-clang-format
+Edit ```~/.gitconfig``` to remove it. Inspired by [githook-clang-format](https://github.com/andrewseidl/githook-clang-format).
