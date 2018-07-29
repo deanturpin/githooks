@@ -2,6 +2,11 @@ Clone this repo and then add hook path to your global git config.
 
 ```bash
 cd githooks
+make
+```
+
+Which actually runs this:
+```bash
 git config --global core.hooksPath $PWD
 ```
 
